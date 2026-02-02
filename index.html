@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>M.A AutoWorks | Premium Car Accessories Gulshan-e-Maymar Karachi</title>
+    <meta name="description" content="M.A AutoWorks provides premium car seat covers, 7D mats, LED lighting, and sound systems in Gulshan-e-Maymar. Best car decoration shop in Karachi with professional fitting.">
+    <meta name="keywords" content="M.A AutoWorks, Car accessories Gulshan-e-Maymar, Car seat covers Karachi, 7D mats Maymar, LED car lights Karachi, Car sound system Maymar">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://maautoworks.github.io/" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'orbitron': ['Orbitron', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'auto-red': '#ff0000',
+                        'auto-dark': '#0a0a0a',
+                        'auto-gray': '#1a1a1a',
+                    },
+                    animation: {
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        glow: {
+                            '0%': { boxShadow: '0 0 5px #ff0000, 0 0 10px #ff0000' },
+                            '100%': { boxShadow: '0 0 20px #ff0000, 0 0 30px #ff0000' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(50px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0a0a0a; color: white; overflow-x: hidden; }
+        .glass-effect { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(135deg, #ff0000 0%, #ff6b6b 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3); }
+        .scroll-reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .scroll-reveal.active { opacity: 1; transform: translateY(0); }
+        .car-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ff0000" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover; background-position: center;
+        }
+    </style>
+</head>
+<body class="font-inter">
+
+    <nav class="fixed w-full z-50 glass-effect border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-car-side text-3xl text-red-600 animate-pulse"></i>
+                    <span class="font-orbitron text-2xl font-bold tracking-wider">M.A <span class="text-red-600">AutoWorks</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-red-500 transition-colors duration-300 font-semibold">Home</a>
+                    <a href="#products" class="hover:text-red-500 transition-colors duration-300 font-semibold">Products</a>
+                    <a href="#services" class="hover:text-red-500 transition-colors duration-300 font-semibold">Services</a>
+                    <a href="#why-us" class="hover:text-red-500 transition-colors duration-300 font-semibold">Why Us</a>
+                    <a href="#contact" class="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-full transition-all duration-300 font-bold">Contact Us</a>
+                </div>
+                <button class="md:hidden text-2xl" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-auto-gray border-t border-white/10">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#home" class="block py-2">Home</a>
+                <a href="#products" class="block py-2">Products</a>
+                <a href="#services" class="block py-2">Services</a>
+                <a href="#contact" class="block py-2 text-red-500 font-bold">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-screen flex items-center justify-center car-bg pt-20">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
+            <div class="animate-slide-up">
+                <h1 class="font-orbitron text-5xl md:text-7xl font-black mb-6 leading-tight">
+                    Upgrade Your <span class="gradient-text">Ride</span><br>
+                    <span class="text-3xl md:text-5xl font-bold text-gray-300">With Premium Accessories</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-400 mb-8 max-w-2xl mx-auto">
+                    Located in Gulshan-e-Maymar. Specializing in luxury seat covers, 7D mats, and sound systems with professional fitting.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#products" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-red-600/30">
+                        Explore Products <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="https://wa.me/923168999429" target="_blank" class="glass-effect hover:bg-white/10 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 border border-white/20">
+                        <i class="fab fa-whatsapp text-green-400 mr-2"></i> WhatsApp Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-red-600 py-6 relative z-20 -mt-10 mx-4 rounded-2xl shadow-2xl max-w-6xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-white">
+            <div class="border-r border-white/20 last:border-0"><div class="text-3xl font-bold font-orbitron">1000+</div><div class="text-sm opacity-90">Happy Customers</div></div>
+            <div class="border-r border-white/20 last:border-0"><div class="text-3xl font-bold font-orbitron">50+</div><div class="text-sm opacity-90">Products</div></div>
+            <div class="border-r border-white/20 last:border-0"><div class="text-3xl font-bold font-orbitron">5★</div><div class="text-sm opacity-90">Rating</div></div>
+            <div><div class="text-3xl font-bold font-orbitron">24/7</div><div class="text-sm opacity-90">Support</div></div>
+        </div>
+    </div>
+
+    <section id="products" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16 scroll-reveal">
+            <h2 class="font-orbitron text-4xl md:text-5xl font-bold mb-4">Our <span class="text-red-600">Products</span></h2>
+            <p class="text-gray-400 text-lg">Premium quality accessories for Gulshan-e-Maymar enthusiasts</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="glass-effect rounded-2xl p-6 hover-lift scroll-reveal group cursor-pointer" onclick="showProductDetail('seat-covers')">
+                <div class="h-48 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-chair text-6xl text-red-600/50 group-hover:text-red-600 transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Luxury Seat Covers</h3>
+                <p class="text-gray-400 text-sm mb-4">Premium leather and fabric options with custom fitting</p>
+                <div class="flex justify-between items-center"><span class="text-red-500 font-bold">From Rs. 5,000</span><button class="text-sm bg-white/10 px-4 py-2 rounded-full">View Details</button></div>
+            </div>
+
+            <div class="glass-effect rounded-2xl p-6 hover-lift scroll-reveal group cursor-pointer" onclick="showProductDetail('steering')">
+                <div class="h-48 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-circle-notch text-6xl text-red-600/50 group-hover:text-red-600 transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Steering Wheel Covers</h3>
+                <p class="text-gray-400 text-sm mb-4">Leather, carbon fiber, and custom designs available</p>
+                <div class="flex justify-between items-center"><span class="text-red-500 font-bold">From Rs. 1,100</span><button class="text-sm bg-white/10 px-4 py-2 rounded-full">View Details</button></div>
+            </div>
+
+            <div class="glass-effect rounded-2xl p-6 hover-lift scroll-reveal group cursor-pointer" onclick="showProductDetail('mats')">
+                <div class="h-48 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-border-all text-6xl text-red-600/50 group-hover:text-red-600 transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Luxury Car Mats</h3>
+                <p class="text-gray-400 text-sm mb-4">3D/7D custom fitted mats for all car models</p>
+                <div class="flex justify-between items-center"><span class="text-red-500 font-bold">From Rs. 1,800</span><button class="text-sm bg-white/10 px-4 py-2 rounded-full">View Details</button></div>
+            </div>
+
+            <div class="glass-effect rounded-2xl p-6 hover-lift scroll-reveal group cursor-pointer" onclick="showProductDetail('led')">
+                <div class="h-48 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-lightbulb text-6xl text-red-600/50 group-hover:text-red-600 transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">LED Lights</h3>
+                <p class="text-gray-400 text-sm mb-4">Interior ambient lighting and exterior upgrades</p>
+                <div class="flex justify-between items-center"><span class="text-red-500 font-bold">From Rs. 2,000</span><button class="text-sm bg-white/10 px-4 py-2 rounded-full">View Details</button></div>
+            </div>
+
+            <div class="glass-effect rounded-2xl p-6 hover-lift scroll-reveal group cursor-pointer" onclick="showProductDetail('dashboard')">
+                <div class="h-48 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-tachometer-alt text-6xl text-red-600/50 group-hover:text-red-600 transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Sound System</h3>
+                <p class="text-gray-400 text-sm mb-4">Speakers, Amp, and Tablets</p>
+                <div class="flex justify-between items-center"><span class="text-red-500 font-bold">From Rs. 15,000</span><button class="text-sm bg-white/10 px-4 py-2 rounded-full">View Details</button></div>
+            </div>
+
+            <div class="glass-effect rounded-2xl p-6 hover-lift scroll-reveal group cursor-pointer" onclick="showProductDetail('care')">
+                <div class="h-48 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-spray-can text-6xl text-red-600/50 group-hover:text-red-600 transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Car Care Products</h3>
+                <p class="text-gray-400 text-sm mb-4">Cleaning kits, wax, and detailing supplies</p>
+                <div class="flex justify-between items-center"><span class="text-red-500 font-bold">From Rs. 500</span><button class="text-sm bg-white/10 px-4 py-2 rounded-full">View Details</button></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-auto-gray">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="font-orbitron text-4xl font-bold mb-12">Why Choose <span class="text-red-600">Us?</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 glass-effect rounded-2xl">
+                    <i class="fas fa-tools text-4xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Pro Fitting</h3>
+                    <p class="text-gray-400 text-sm">Damage-free professional installation.</p>
+                </div>
+                <div class="p-8 glass-effect rounded-2xl">
+                    <i class="fas fa-shield-alt text-4xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Best Prices</h3>
+                    <p class="text-gray-400 text-sm">Transparent pricing for premium quality.</p>
+                </div>
+                <div class="p-8 glass-effect rounded-2xl">
+                    <i class="fas fa-headset text-4xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">24/7 Support</h3>
+                    <p class="text-gray-400 text-sm">After-sales support for every customer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16 scroll-reveal">
+            <h2 class="font-orbitron text-4xl md:text-5xl font-bold mb-4">Visit <span class="text-red-600">Us</span></h2>
+            <p class="text-gray-400 text-lg">Gulshan-e-Maymar, Karachi</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <a href="https://maps.google.com/?q=MA+AutoWorks+Gulshan-e-Maymar" target="_blank" class="glass-effect p-6 rounded-2xl hover-lift text-center group">
+                <i class="fas fa-map-marker-alt text-2xl text-red-600 mb-4"></i>
+                <h3 class="font-bold">Location</h3>
+                <p class="text-gray-400 text-xs">Gulshan-e-Maymar, Karachi</p>
+            </a>
+            <a href="tel:03168999429" class="glass-effect p-6 rounded-2xl hover-lift text-center">
+                <i class="fas fa-phone text-2xl text-red-600 mb-4"></i>
+                <h3 class="font-bold">Call Us</h3>
+                <p class="text-gray-400 text-xs">0316-8999429</p>
+            </a>
+            <a href="https://wa.me/923168999429" target="_blank" class="glass-effect p-6 rounded-2xl hover-lift text-center">
+                <i class="fab fa-whatsapp text-2xl text-green-500 mb-4"></i>
+                <h3 class="font-bold">WhatsApp</h3>
+                <p class="text-gray-400 text-xs">Chat Now</p>
+            </a>
+            <div class="glass-effect p-6 rounded-2xl text-center">
+                <i class="fas fa-clock text-2xl text-blue-500 mb-4"></i>
+                <h3 class="font-bold">Timings</h3>
+                <p class="text-gray-400 text-xs">11:00 AM – 12:00 AM</p>
+            </div>
+        </div>
+
+        <div class="mt-16 text-center">
+            <h3 class="text-2xl font-bold mb-6">Follow Us</h3>
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.instagram.com/maautoworks?igsh=cjR2OWY3dW5zN2ly" target="_blank" class="w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="https://www.tiktok.com/@maautoworks?_r=1&_t=ZS-93Ymop5hPRB" target="_blank" class="w-16 h-16 bg-black border border-white/20 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                    <i class="fab fa-tiktok text-2xl"></i>
+                </a>
+            </div>
+            <p class="mt-4 text-gray-400 font-orbitron">@maautoworks</p>
+        </div>
+    </section>
+
+    <footer class="bg-black border-t border-white/10 py-12 px-4 text-center">
+        <span class="font-orbitron text-xl font-bold">M.A <span class="text-red-600">AutoWorks</span></span>
+        <p class="text-gray-500 text-sm mt-4">© 2026 M.A AutoWorks. Gulshan-e-Maymar, Karachi.</p>
+    </footer>
+
+    <div id="product-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="glass-effect max-w-xl w-full rounded-2xl p-8 relative border border-white/20">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400"><i class="fas fa-times text-2xl"></i></button>
+            <div id="modal-content" class="text-center"></div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMobileMenu() { document.getElementById('mobile-menu').classList.toggle('hidden'); }
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.scroll-reveal').forEach((el) => observer.observe(el));
+
+        const productDetails = {
+            'seat-covers': { title: 'Luxury Seat Covers', icon: 'fa-chair', description: 'Premium leather/PU seat covers with custom stitching.', features: ['Waterproof', 'Custom fit', 'Airbag safe'], price: 'Rs. 5,000' },
+            'steering': { title: 'Steering Covers', icon: 'fa-circle-notch', description: 'Carbon fiber and leather covers for best grip.', features: ['Anti-slip', 'Heat resistant'], price: 'Rs. 1,100' },
+            'mats': { title: '7D Car Mats', icon: 'fa-border-all', description: 'Custom fitted mats with raised edges for dirt protection.', features: ['7D Protection', 'Waterproof'], price: 'Rs. 1,800' },
+            'led': { title: 'LED Lights', icon: 'fa-lightbulb', description: 'Interior ambient and exterior powerful LED upgrades.', features: ['App control', 'Low power'], price: 'Rs. 2,000' },
+            'dashboard': { title: 'Sound System', icon: 'fa-tachometer-alt', description: 'Android panels, speakers, and amplifiers.', features: ['HD Display', 'Deep Bass'], price: 'Rs. 15,000' },
+            'care': { title: 'Car Care', icon: 'fa-spray-can', description: 'Polish, wax, and interior cleaning kits.', features: ['Pro grade', 'Long lasting'], price: 'Rs. 500' }
+        };
+
+        function showProductDetail(id) {
+            const p = productDetails[id];
+            document.getElementById('modal-content').innerHTML = `
+                <i class="fas ${p.icon} text-6xl text-red-600 mb-4"></i>
+                <h3 class="text-3xl font-bold mb-4 font-orbitron">${p.title}</h3>
+                <p class="text-gray-300 mb-6">${p.description}</p>
+                <div class="flex justify-center gap-4 mb-6">
+                    ${p.features.map(f => `<span class="bg-red-600/20 text-red-500 px-3 py-1 rounded-full text-xs">${f}</span>`).join('')}
+                </div>
+                <p class="text-2xl font-bold text-white mb-6">Starting ${p.price}</p>
+                <a href="https://wa.me/923168999429?text=Interested in ${p.title}" target="_blank" class="bg-green-600 text-white px-8 py-3 rounded-full font-bold">Order on WhatsApp</a>
+            `;
+            document.getElementById('product-modal').classList.remove('hidden');
+        }
+        function closeModal() { document.getElementById('product-modal').classList.add('hidden'); }
+    </script>
+</body>
+</html>
